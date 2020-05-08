@@ -1,0 +1,12 @@
+name: wpgatsby
+recipe: wordpress
+config:
+  php: '7.2'
+  via: nginx
+  webroot: web
+  database: mariadb
+  xdebug: true
+  
+services:
+  pma:
+    type: phpmyadmin  

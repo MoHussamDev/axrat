@@ -1,0 +1,37 @@
+.fh_slider{
+  direction:rtl;
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        background-size: cover;
+        min-height: 50vh;
+        width: 100vw;
+      .slideing{
+        @extend .container !optional;
+      }
+        .center{
+          display:flex;
+          align-items:center;
+          justify-content: flex-start;
+          height:70vh;
+        }
+        .fh-contentBox{
+          width:80%;
+          // background-color: rgba(0 , 0, 0,0.5);
+          text-align: right;
+        h1{
+          font-size:40px;
+          color: white;
+          font-weight: 500;
+        }
+        p{
+          font-size:12px;
+          color: white;
+          width:50%;
+        }
+        }
+      }
+
+}

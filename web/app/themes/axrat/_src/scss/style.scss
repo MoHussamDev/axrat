@@ -1,0 +1,48 @@
+
+@import '../../../../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './tools/fonts';
+
+@import './tools/normalize';
+
+@import './tools/vars';
+
+@import './tools/mainSite';
+
+@import './tools/breakPoints';
+
+
+// _
+
+@import './sections/header';
+@import './sections/footer';
+@import './sections/incs';
+
+ * {
+    outline: none;
+  }
+  
+  html {
+    font-size: 16px; /* Do not change, sets up REM font sizing (1 px = 0.0625 rem) */
+  }
+  
+  #wpadminbar {
+    overflow: hidden;
+  }
+#content{
+    #primary{
+        main{
+            @import './sections/fh-slider';
+            @import './sections/fh-primaryContent';
+        }
+    }
+    
+}
+.ab-icon{
+
+  &:before{
+    font-family: 'FontAwesome' !important;
+    font-size:12px !important;
+    top:0 !important;
+  }
+  }
+

@@ -1,0 +1,256 @@
+#topBar{
+    background-color: $mainCol;
+    direction: rtl;
+    .f-main{
+        display:flex;
+        min-height: 35px;
+        &-wrapper{
+            display:flex;
+            justify-content: flex-start;
+            align-items:center;
+            width:50%;
+        }
+        .right{
+            
+            justify-content: flex-end;
+        }
+        .center{
+            justify-content: center;
+        }
+        &-content{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            // margin-left:1rem;
+            font-size:11px;
+            color:$mainWhite;
+            font-weight: bold;
+            text-transform:uppercase;
+            ul{
+                margin:0;
+                // padding-left:1rem;
+                // padding-right:1rem;
+                display: flex;
+                align-items:center;
+                height: 100%;
+                list-style: none;
+
+                li{
+                    background-color: $mainWhite;
+                 width:1.5rem;
+                 height: 1.5rem;
+                 margin-left:0.2rem;
+                    border-radius:100%;
+                    display:flex;
+                    align-items:center;
+                    justify-content: center;
+                    transition: all 0.2s ease;
+                    &:hover{
+                        background-color: $hoverCol;
+                        a{
+                            color: $mainWhite;
+                            
+                        }
+                    }
+
+a{
+    text-decoration: none;
+    color: $mainCol;
+    i{
+        margin:0;
+    }
+}
+                }
+            }
+            i{
+                margin-left:0.2rem;
+            }
+        }
+        .f-site-info{
+            margin-left:1rem;
+        }
+    }
+}
+nav{
+    direction: rtl;
+   #bs-example-navbar-collapse-1{
+        justify-content: flex-end;
+    #menu-header{
+        li{
+
+            .dropdown-toggle{
+                &:after{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    }
+}
+// #navigation{
+//     background-color: white;
+//     direction: rtl;
+//     position: sticky;
+//     top:0;
+//     z-index:10000;
+//     .f-main{
+//      display: flex;
+//      min-height: 70px;
+//      &-wrapper{
+//         display:flex;
+//         justify-content: flex-start;
+//         align-items:center;
+//         &-logo{
+//             width:20%;
+//             display:flex;
+//             align-items:center;
+//             justify-content:flex-start;
+//             a{
+//                 height: 50px;
+//                 img{
+//                     width:auto;
+//                     height: 100%;
+//                 }
+//             }
+//         }
+//         &-mainNav{
+//             width:80%;
+//             display:flex;
+//             align-items:center;
+//             justify-content:flex-end;
+       
+//             ul{
+//                 list-style: none ;
+//                 width:100%;
+//                 display: flex;
+//                 justify-content: flex-end;
+//                 margin:0;
+//                 li{ 
+//                     &:after{
+//                         content:'';
+//                         border-left:1px $dark solid;
+//                         position: absolute;
+//                         height: 50%;
+//                         opacity: 0.1;
+//                         // top:0;
+//                         left:0;
+//                     }
+//                     &:before{
+//                         content:'';
+//                         background-color: $mainCol;
+//                         position:absolute;
+//                         height: 0;
+//                         width:100%;
+//                         top:0;
+//                         z-index:-1;
+//                         transition: all 0.2s ease;
+                        
+//                     }
+//                     margin-left:1rem;
+//                     width:5rem;
+//                     height:70px;  
+//                     display: flex;
+//                     align-items: center;
+//                     justify-content: center;
+//                     margin:0;
+//                     position: relative;
+//                     &:hover{
+//                         .f-drop{
+//                             visibility:visible;
+//                             right:0;
+//                             opacity:1;
+//                             ul{
+//                                 li{
+//                                     &:before{
+//                                         height:0;
+//                                     }
+                                  
+//                                     a{
+//                                         color: $mainCol;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                         &:before{
+//                         height: 100%;
+//                         }
+//                         a{
+//                             color: white;
+//                         }
+//                     }
+
+//                     a{
+//                         text-decoration: none;
+//                         display:flex;
+//                         flex-direction:column;
+//                         align-items:center;
+//                         justify-content:center;
+//                         color: $mainCol;
+//                         text-align:center;
+//                         font-weight: 400;
+//                         font-size:0.8rem;
+//                         i{
+//                             width:2rem;
+//                             font-size:1rem;
+//                             margin-bottom:0.3rem;
+//                         }
+                        
+                        
+//                     }
+//                 }
+
+
+//             }
+//            .f-drop{
+//                         &:before{
+//                             font-family: 'FontAwesome' !important;
+//                             content: '\f0d8';
+//                             position: absolute;
+//                             font-weight: normal !important;
+//                             color:white;
+//                             height:5px;
+//                             top:-15px;
+//                             right:5px;
+//                             z-index:1;
+//                         }
+//                         visibility: hidden;
+//                         position:absolute;
+//                         background-color: white;
+//                         height: auto;
+//                         top:100%;
+//                         right:-2rem;
+//                         width:160px;
+//                         margin-top:0.1rem;
+//                         opacity: 0;
+//                         transition: all 0.5s ease;
+//                         ul{
+//                             width:100%;
+//                             display:flex;
+//                             flex-direction:column;
+//                             align-items:flex-start;
+                        
+//                             li{ 
+
+//                                 width:100%;
+//                                 height:40px;
+//                                 display:flex;
+//                                 justify-content: flex-start;
+//                                 padding-right:0.5rem;
+//                                 &:hover{
+//                                     background-color: #f9f9f9;
+//                                 }
+//                                 a{
+//                                     display:flex;
+//                                     flex-direction:row;
+//                                     // transition: all 0.2s ease !important;
+//                                 }
+//                             }
+//                         }
+
+//                     }
+//         }
+//     }
+//  }   
+// }
+
+

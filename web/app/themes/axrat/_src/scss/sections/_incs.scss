@@ -1,0 +1,12 @@
+.f-button{
+    text-decoration: none;
+    background-color: $mainCol;
+    color: white !important;
+    // height: 4rem;
+    padding: 0.1rem 1.9rem;
+    cursor: pointer;
+    transition: all 0.7s ease ;
+    &:hover{
+        background-color: $hoverCol;
+    }
+}
